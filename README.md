@@ -1,21 +1,47 @@
-1. Clone the Repository
-First, clone the repository to your local machine using Git. Open your terminal (or Git Bash) and run the following command:
-git clone https://github.com/lizagarg/braille-app.git
-This will download the project to a folder named braille-app on your computer.
+# BRAILLE VERSE: An AI-Powered Dynamic Braille Display
 
-2. Navigate to the Project Directory
-After cloning the repository, navigate into the project directory:
-cd braille-app
+A modern web application that converts documents into braille format, making content accessible for visually impaired individuals.
 
-3. Install Dependencies
-The project likely has dependencies that need to be installed. These dependencies are listed in the package.json file. To install them, run the following command:
-npm install
+## Features
 
-4. Set Up the Development Environment
-Make sure you have Node.js installed on your system. You can check if it's installed by running:
-node -v
-If Node.js is not installed, you can download it from the official website.
+- 📄 Document Upload: Convert PDF, DOC, DOCX, and TXT files to braille
+- 📚 Book Reading: Access a library of braille books
+- 📰 News Reading: Stay updated with latest news in braille format
 
-5. Run the Development Server
-Once the dependencies are installed, start the development server by running:
-npm run dev
+## Prerequisites
+
+Before you begin, ensure you have the following installed:
+- [Node.js](https://nodejs.org/) (v18.0.0 or higher)
+- [Git](https://git-scm.com/) (for cloning the repository)
+- A modern web browser (Chrome, Firefox, Safari, or Edge)
+
+## Installation
+
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/lizagarg/braille-app.git
+   ```
+
+2. **Navigate to Project Directory**
+   ```bash
+   cd braille-app
+   ```
+
+3. **Install Dependencies**
+   ```bash
+   npm install
+   ```
+
+## Development
+
+1. **Start the Development Server**
+   ```bash
+   npm run dev
+   ```
+   This will start the development server at `http://localhost:5173`
+
+2. **Build for Production**
+   ```bash
+   npm run build
+   ```
+
