@@ -12,7 +12,7 @@ function MainCard({ title, description, link }) {
   
   return (
     <Link to={`/${link}`} className="group">
-      <div className="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
+      <div className="bg-white rounded-lg shadow p-8 hover:shadow-xl transition-shadow duration-300 mx-4">
         <Icon className="h-16 w-16 text-blue-500 mx-auto mb-4" />
         <h2 className="text-2xl font-semibold text-center text-gray-800 mb-2">{title}</h2>
         <p className="text-gray-600 text-center">{description}</p>
