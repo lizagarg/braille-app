@@ -9,7 +9,7 @@ function App() {
   return (<Router>
       <div className="h-screen bg-green-50">
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} />
           <Route path="/upload" element={<UploadDocument />} />
           <Route path="/book" element={<ReadBook />} />
           <Route path="/news" element={<ReadNews />} />

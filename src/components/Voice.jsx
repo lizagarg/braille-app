@@ -48,9 +48,17 @@ export function Voice() {
         navigate("/upload");
       } else {
         speak("Sorry, I didn't understand the command.");
-        alert("Sorry, I didn't understand.");
       }
     };
+
+    reco.onerror = (e) => {
+        reco.stop();
+        setTimeout(() => startListening(), 1000); // Retry after 1 sec
+      };
+  
+      reco.onend = () => {
+        reco.start(); // 👈 Restart mic automatically
+      };
 
     reco.start();
   };
@@ -59,7 +67,7 @@ export function Voice() {
     speak("I am listening. Please say a command.");
     setTimeout(() => {
       startListening();
-    }, 2000); // Wait 2 seconds, THEN start listening
+    }, 4000); // Wait 2 seconds, THEN start listening
   };
 
   return (
