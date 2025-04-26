@@ -6,9 +6,8 @@ import ReadNews from './pages/ReadNews';
 import './App.css'
 
 function App() {
-  return (
-    <Router>
-      <div className="min-h-screen bg-gray-50">
+  return (<Router>
+      <div className="h-screen bg-green-50">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/upload" element={<UploadDocument />} />
